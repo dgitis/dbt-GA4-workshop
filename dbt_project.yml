@@ -28,8 +28,11 @@ vars:
   ga4:
     project: "daa-workshop"
     dataset: "daa_ga"
-    start_date: "20220801"
+    start_date: "20220601"
     frequency: "daily"
+  analyses:
+    cohort:
+      cohort_period: 'week'
 
 models:
   ga4:
