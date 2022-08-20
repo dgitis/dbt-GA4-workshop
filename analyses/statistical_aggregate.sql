@@ -1,1 +1,0 @@
--- https://cloud.google.com/bigquery/docs/reference/standard-sql/statistical_aggregate_functions
