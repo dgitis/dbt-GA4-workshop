@@ -17,7 +17,7 @@ SELECT
   session_start_date,
   sum(count_page_views) as page_views
 FROM
-  `daa-workshop.dbt_dgudaitis.fct_ga4__sessions`
+  `daa-workshop.dbt_dgudaitis_analytics.fct_ga4__sessions`
 GROUP BY session_start_date
 
 
