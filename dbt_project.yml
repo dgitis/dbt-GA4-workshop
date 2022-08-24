@@ -37,5 +37,5 @@ vars:
 models:
   ga4:
     marts:
-#      +schema:
+      +schema: analytics
 
