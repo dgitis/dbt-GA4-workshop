@@ -22,9 +22,9 @@ with initial as (
         first_seen_dt,
         concat( extract( year from  first_seen_dt )
             {% if var('cohort_period', 'month') == 'month'  %}
-                , "-" ,extract( month from  first_seen_dt ) 
+                extract( month from  first_seen_dt ) 
             {% elif var('cohort_period', 'month') == 'week'  %}
-                , "-" , extract( week from  first_seen_dt ) 
+                extract( week from  first_seen_dt ) 
             {% endif %} 
         ) as initial_cohort_{{var('cohort_period', 'month')}}
     from  {{ ref('dim_ga4__users') }}
