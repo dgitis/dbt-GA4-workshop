@@ -27,7 +27,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 vars:
   ga4:
     project: "daa-workshop"
-    dataset: "daa_ga"
+    dataset: "analytics_111111"
     start_date: "20220601"
     frequency: "daily"
   analyses:
