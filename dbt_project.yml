@@ -29,12 +29,11 @@ vars:
     project: "daa-workshop"
     dataset: "analytics_111111"
     start_date: "20220601"
-    frequency: "daily"
-  analyses:
-    cohort:
-      cohort_period: 'week'
+    frequency: "daily"  # daily|streaming|daily+streaming
 
 models:
+  marts:
+    +schema: analytics
   ga4:
     marts:
       +schema: analytics
