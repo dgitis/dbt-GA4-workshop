@@ -35,6 +35,8 @@ vars:
       cohort_period: 'week'
 
 models:
+  marts:
+    +schema: analytics
   ga4:
     marts:
       +schema: analytics
